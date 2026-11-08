@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Momsbloom ♡ — Pendampingan Menyusui yang Hangat &amp; Personal</title>
+<meta name="description" content="You are not alone in your breastfeeding journey. Pendampingan menyusui edukatif, personal, dan berkelanjutan untuk ibu.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['"Plus Jakarta Sans"','sans-serif'],serif:['Fraunces','serif']},colors:{
+blush:{50:'#FCF3F2',100:'#F7E1E0',200:'#EDC8C7',400:'#D9A3A4',500:'#C98789',600:'#B06E71'},
+sage:{50:'#F4F7F1',100:'#E4EBDD',200:'#CBD8C0',400:'#9DB18C',500:'#7F9B6F',600:'#667F59',700:'#4F6546'},
+cream:{50:'#FDFAF6',100:'#F8F2EA'},ink:'#5A4A4A'}}}}
+</script>
+<style>
+body{background:#FDFAF6;color:#5A4A4A}
+h1,h2,h3,.ser{font-family:Fraunces,serif;color:#4A3B3B}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.rv.in{opacity:1;transform:none}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(5deg)}}
+@keyframes pop{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:none}}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+@keyframes sway{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+.fl{animation:fl 7s ease-in-out infinite}.fl2{animation:fl 9s ease-in-out 1.5s infinite}.pop{animation:pop .3s ease-out}
+.beat{animation:beat 2.4s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+.sway{animation:sway 5s ease-in-out infinite;transform-origin:50% 100%;transform-box:fill-box}
+.card{background:#fff;border:1px solid #F7E1E0;border-radius:2rem;box-shadow:0 18px 40px -22px rgba(176,110,113,.3)}
+.fi{width:100%;padding:.7rem 1rem;border-radius:1rem;border:1px solid #EDC8C7;background:#fff;font-size:.875rem}
+.fi:focus{outline:none;border-color:#7F9B6F;box-shadow:0 0 0 3px #E4EBDD}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-weight:600;border-radius:9999px;padding:.85rem 1.7rem;transition:all .3s}
+.btn:hover{transform:translateY(-2px)}
+details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-marker{display:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body class="font-sans antialiased selection:bg-blush-200 overflow-x-hidden">
+<div id="prog" class="fixed top-0 left-0 h-1 bg-blush-400 z-[60] w-0"></div>
+
+<header class="sticky top-0 z-40 bg-cream-50/85 backdrop-blur-md border-b border-blush-100">
+<div class="max-w-6xl mx-auto px-5 h-20 flex items-center justify-between">
+<a href="#" class="flex items-center gap-2.5 group"><svg class="w-10 h-10 group-hover:rotate-12 transition" viewBox="0 0 48 48"><g fill="#D9A3A4"><circle cx="24" cy="12" r="9"/><circle cx="36" cy="21" r="9"/><circle cx="31" cy="35" r="9"/><circle cx="17" cy="35" r="9"/><circle cx="12" cy="21" r="9"/></g><circle cx="24" cy="26" r="8" fill="#F8F2EA"/><path d="M24 31c-4-3-5-5-5-7a3 3 0 015-1 3 3 0 015 1c0 2-1 4-5 7z" fill="#7F9B6F"/></svg>
+<span class="ser text-2xl font-semibold text-blush-600">Momsbloom <span class="text-sage-500">♡</span></span></a>
+<nav id="nav" class="hidden lg:flex items-center gap-7 text-sm font-medium"></nav>
+<a href="#kontak" class="hidden lg:inline-flex btn bg-blush-500 hover:bg-blush-600 text-white text-sm !py-2.5">Konsultasi</a>
+<button onclick="mm()" class="lg:hidden p-2 rounded-full hover:bg-blush-100" aria-label="Menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
+<div id="mm" class="hidden lg:hidden bg-white px-5 pb-5 pt-2 space-y-1 text-sm font-medium border-b border-blush-100"></div>
+</header>
+
+<!-- HOME -->
+<section class="relative overflow-hidden pt-14 pb-24 lg:pt-20 lg:pb-32">
+<svg class="absolute -top-16 -left-20 w-80 text-blush-100 fl" viewBox="0 0 200 200"><path fill="currentColor" d="M44-62C57-52 67-38 73-22 79-6 80 14 71 28 62 42 44 50 27 58 10 66-7 74-22 70-37 66-50 50-58 34-66 18-69 2-64-12-59-26-46-38-33-48-20-58-6-66 8-68 22-70 31-72 44-62Z" transform="translate(100 100)"/></svg>
+<svg class="absolute bottom-0 -right-16 w-96 text-sage-100 fl2" viewBox="0 0 200 200"><path fill="currentColor" d="M39-55C50-47 58-34 63-20 68-5 70 12 62 24 54 36 37 43 22 52 7 61-6 72-20 70-34 68-48 53-56 38-64 23-66 8-62-6-58-20-48-33-36-41-24-49-10-53 3-57 16-61 28-63 39-55Z" transform="translate(100 100)"/></svg>
+<div class="relative max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-center">
+<div class="rv text-center lg:text-left">
+<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-blush-200 text-xs font-semibold text-blush-600 mb-7"><span class="w-2 h-2 rounded-full bg-sage-500 animate-pulse"></span>Pendampingan menyusui untuk ibu</span>
+<h1 class="text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.15] font-semibold mb-6">Halo, Bunda 🌸<br>Selamat datang di <span class="text-blush-500">Momsbloom</span></h1>
+<p class="ser italic text-xl sm:text-2xl text-sage-600 mb-5">“You are not alone in your breastfeeding journey.”</p>
+<p class="text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-9">Kami menemani Bunda melewati masa awal menyusui lewat konsultasi, edukasi, dan pendampingan yang <b>hangat, personal, dan berkelanjutan</b>, mulai dari pertanyaan pertama sampai Bunda merasa percaya diri.</p>
+<div class="flex flex-col sm:flex-row gap-3.5 justify-center lg:justify-start">
+<a href="#kontak" class="btn bg-blush-500 hover:bg-blush-600 text-white shadow-lg shadow-blush-500/25">Konsultasi Sekarang ♡</a>
+<a href="#app" class="btn bg-white border border-sage-200 text-sage-700 hover:bg-sage-50">Coba Bloom Tools</a></div>
+</div>
+<div class="rv relative max-w-md mx-auto w-full">
+<div class="absolute -inset-3 rounded-[3rem] bg-gradient-to-br from-blush-100 to-sage-100 rotate-3"></div>
+<div class="relative rounded-[2.5rem] bg-cream-100 border-4 border-white shadow-xl overflow-hidden">
+<svg viewBox="0 0 400 400" class="w-full" role="img" aria-label="Ilustrasi ibu menyusui bayi">
+<circle cx="200" cy="215" r="170" fill="#E4EBDD"/><circle cx="330" cy="80" r="26" fill="#F7E1E0"/>
+<g class="sway"><path d="M105 400C100 290 140 235 200 235s100 55 95 165z" fill="#D9A3A4"/>
+<path d="M150 400c-4-60 10-110 50-130" stroke="#C98789" stroke-width="3" fill="none" opacity=".5"/>
+<rect x="184" y="196" width="32" height="44" rx="14" fill="#F2D3BF"/>
+<circle cx="200" cy="165" r="48" fill="#F2D3BF"/>
+<path d="M150 168c-6-50 36-66 70-58 28 6 34 38 30 62-8-32-52-44-100-4z" fill="#6B4A3F"/><circle cx="222" cy="108" r="22" fill="#6B4A3F"/>
+<path d="M178 170q7 6 14 0M210 170q7 6 14 0" stroke="#6B4A3F" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M190 188q10 8 20 0" stroke="#B06E71" stroke-width="3" fill="none" stroke-linecap="round"/>
+<circle cx="172" cy="182" r="7" fill="#EDC8C7" opacity=".8"/><circle cx="230" cy="182" r="7" fill="#EDC8C7" opacity=".8"/>
+<ellipse cx="238" cy="298" rx="72" ry="40" transform="rotate(-14 238 298)" fill="#CBD8C0"/>
+<circle cx="282" cy="270" r="30" fill="#F2D3BF"/><path d="M262 262c8-14 30-14 38 0-10-6-26-6-38 0z" fill="#6B4A3F"/>
+<path d="M270 274q5 4 10 0M288 274q5 4 10 0" stroke="#6B4A3F" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="283" cy="285" r="4" fill="#EDC8C7"/>
+<path d="M140 310c35 48 120 52 160-6-30 26-120 36-160 6z" fill="#B06E71"/></g>
+<g class="beat" fill="#D9A3A4"><path d="M92 120c-8-6-12-12-12-17a7 7 0 0112-4 7 7 0 0112 4c0 5-4 11-12 17z"/></g>
+<g class="beat" fill="#9DB18C" style="animation-delay:.8s"><path d="M330 190c-6-4-9-9-9-13a5 5 0 019-3 5 5 0 019 3c0 4-3 9-9 13z"/></g>
+</svg></div>
+<div class="absolute -top-7 -right-3 sm:-right-9 w-32 h-32 sm:w-36 sm:h-36 rounded-[2rem] border-4 border-white shadow-xl overflow-hidden rotate-6 fl2 bg-blush-100"><img loading="lazy" src="https://unsplash.com/photos/PyC8BqzJroo/download?w=500" alt="Ibu menyusui bayinya" class="w-full h-full object-cover" onerror="this.remove()"></div>
+<div class="absolute -bottom-5 -left-3 sm:-left-8 card px-5 py-3 fl flex items-center gap-3"><span class="text-2xl">🤱</span><div><p class="text-[11px] text-ink/60">Didampingi dengan</p><p class="text-sm font-semibold text-blush-600">Empati &amp; Edukasi</p></div></div>
+</div></div>
+</section>
+
+<!-- TENTANG -->
+<section id="tentang" class="py-24 bg-white border-y border-blush-100"><div class="max-w-6xl mx-auto px-5">
+<div class="text-center max-w-2xl mx-auto mb-16 rv"><span class="text-xs font-bold tracking-[.2em] uppercase text-sage-500">Tentang Kami</span>
+<h2 class="text-3xl sm:text-4xl font-semibold mt-3">Mengapa Momsbloom ada</h2></div>
+<div class="grid lg:grid-cols-2 gap-10 items-start">
+<div class="space-y-6 rv leading-relaxed">
+<div><h3 class="text-xl font-semibold mb-2">Latar belakang</h3><p>Momsbloom lahir dari kepedulian pada ibu baru yang kerap merasa bingung, cemas, dan kurang percaya diri di minggu-minggu awal menyusui, saat dukungan paling dibutuhkan namun sering sulit dijangkau.</p></div>
+<div><h3 class="text-xl font-semibold mb-2">Tujuan pendampingan</h3><p>Membantu ibu memahami proses menyusui, menemukan solusi yang sesuai kondisinya, dan merasa ditemani, bukan dihakimi, sepanjang perjalanannya.</p></div>
+<div><h3 class="text-xl font-semibold mb-3">Siapa yang kami dampingi</h3><div id="sasaran" class="flex flex-wrap gap-2"></div></div>
+</div>
+<div class="space-y-6 rv">
+<div class="card p-8 bg-gradient-to-br from-blush-50 to-white"><span class="text-xs font-bold tracking-[.2em] uppercase text-blush-500">Visi</span>
+<p class="ser text-xl sm:text-2xl leading-snug mt-3">“Menjadi layanan pendampingan menyusui yang memberikan dukungan edukatif, personal, dan berkelanjutan bagi ibu dalam menjalani masa awal menyusui.”</p></div>
+<div class="card p-8"><span class="text-xs font-bold tracking-[.2em] uppercase text-sage-500">Misi</span><ul id="misi" class="mt-4 space-y-3 text-sm"></ul></div></div></div>
+<div class="relative h-64 sm:h-80 rounded-[2.5rem] overflow-hidden mt-14 bg-gradient-to-br from-blush-100 to-sage-100 rv group">
+<img loading="lazy" src="https://unsplash.com/photos/YcK1f_-n0z4/download?w=1400" alt="Orang tua menggendong bayi baru lahir" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-1000" onerror="this.remove()">
+<div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/10 to-transparent"></div>
+<p class="absolute bottom-6 left-6 right-6 ser italic text-xl sm:text-2xl text-white max-w-xl">“Dukungan keluarga membuat perjalanan menyusui terasa lebih ringan.”</p></div>
+<div id="nilai" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-8"></div>
+</div></section>
+
+<!-- PAKET -->
+<section id="paket" class="py-24"><div class="max-w-6xl mx-auto px-5">
+<div class="text-center max-w-2xl mx-auto mb-16 rv"><span class="text-xs font-bold tracking-[.2em] uppercase text-blush-500">Our Packages</span>
+<h2 class="text-3xl sm:text-4xl font-semibold mt-3 mb-4">Paket Pendampingan</h2><p>Pilih tingkat dukungan yang paling sesuai dengan kebutuhan Bunda dan keluarga.</p></div>
+<div id="pk" class="grid md:grid-cols-3 gap-7"></div>
+<p class="text-center text-xs text-ink/60 mt-8 max-w-xl mx-auto rv">Harga akan ditentukan setelah perhitungan biaya operasional dan validasi kebutuhan calon pengguna.</p>
+</div></section>
+
+<!-- APP -->
+<section id="app" class="py-24 bg-sage-50 border-y border-sage-100"><div class="max-w-4xl mx-auto px-5">
+<div class="text-center max-w-2xl mx-auto mb-12 rv"><span class="text-xs font-bold tracking-[.2em] uppercase text-sage-600">Bloom Tools</span>
+<h2 class="text-3xl sm:text-4xl font-semibold mt-3 mb-4">Teman kecil untuk perjalanan menyusuimu</h2><p>Coba langsung! Data tracker hanya tersimpan di perangkat Bunda.</p></div>
+<div class="flex justify-center gap-2 mb-8 rv" id="tabs"></div>
+<div class="card p-6 sm:p-10 rv" id="app-body"></div>
+</div></section>
+
+<!-- EDUKASI -->
+<section id="edukasi" class="py-24"><div class="max-w-6xl mx-auto px-5">
+<div class="text-center max-w-2xl mx-auto mb-16 rv"><span class="text-xs font-bold tracking-[.2em] uppercase text-blush-500">Education Corner</span>
+<h2 class="text-3xl sm:text-4xl font-semibold mt-3 mb-4">Pusat Informasi</h2><p>Bacaan pilihan dari sumber terpercaya untuk Bunda dan keluarga.</p></div>
+<div id="art" class="grid md:grid-cols-3 gap-7 mb-20"></div>
+<div class="max-w-3xl mx-auto rv"><h3 class="text-2xl font-semibold text-center mb-7">Pertanyaan yang Sering Diajukan</h3><div id="faq" class="space-y-3"></div></div>
+</div></section>
+
+<!-- ALUR -->
+<section id="alur" class="py-24 bg-white border-y border-blush-100"><div class="max-w-6xl mx-auto px-5">
+<div class="text-center max-w-2xl mx-auto mb-16 rv"><span class="text-xs font-bold tracking-[.2em] uppercase text-sage-500">How It Works</span>
+<h2 class="text-3xl sm:text-4xl font-semibold mt-3 mb-4">Alur Konsultasi</h2><p>Sederhana, tanpa ribet. Lima langkah menuju pendampingan yang pas.</p></div>
+<div class="relative"><div class="hidden lg:block absolute top-8 left-[10%] right-[10%] border-t-2 border-dashed border-blush-200"></div>
+<div id="steps" class="grid lg:grid-cols-5 gap-6 relative"></div></div>
+</div></section>
+
+<!-- KONTAK -->
+<section id="kontak" class="py-24"><div class="max-w-6xl mx-auto px-5">
+<div class="text-center max-w-2xl mx-auto mb-16 rv"><span class="text-xs font-bold tracking-[.2em] uppercase text-blush-500">Contact Us</span>
+<h2 class="text-3xl sm:text-4xl font-semibold mt-3 mb-4">Hubungi Kami</h2><p>Ceritakan kebutuhan Bunda. Kami siap mendengarkan.</p></div>
+<div class="grid lg:grid-cols-5 gap-8">
+<div class="lg:col-span-2 space-y-4 rv">
+<div class="relative h-48 rounded-[2rem] overflow-hidden bg-gradient-to-br from-sage-100 to-blush-100 group"><img loading="lazy" src="https://unsplash.com/photos/ky5qI6GZchE/download?w=900" alt="Keluarga menggendong bayi di sofa" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-1000" onerror="this.remove()"><div class="absolute inset-0 bg-gradient-to-t from-ink/50 to-transparent"></div><p class="absolute bottom-4 left-5 right-5 ser italic text-white text-lg">Bunda tidak sendirian ♡</p></div>
+<a id="c-wa" target="_blank" rel="noopener" class="card p-5 flex items-center gap-4 hover:-translate-y-1 transition block"><span class="w-12 h-12 rounded-2xl bg-sage-100 flex items-center justify-center text-xl">💬</span><div><p class="font-semibold text-ink">WhatsApp</p><p class="text-xs text-ink/60">Chat langsung dengan kami</p></div></a>
+<a href="https://instagram.com/momsbloom.id" target="_blank" rel="noopener" class="card p-5 flex items-center gap-4 hover:-translate-y-1 transition"><span class="w-12 h-12 rounded-2xl bg-blush-100 flex items-center justify-center text-xl">📸</span><div><p class="font-semibold text-ink">Instagram</p><p class="text-xs text-ink/60">@momsbloom.id</p></div></a>
+<a href="mailto:hello@momsbloom.id" class="card p-5 flex items-center gap-4 hover:-translate-y-1 transition"><span class="w-12 h-12 rounded-2xl bg-cream-100 flex items-center justify-center text-xl">✉️</span><div><p class="font-semibold text-ink">Email Bisnis</p><p class="text-xs text-ink/60">hello@momsbloom.id</p></div></a>
+<div class="card p-6 bg-sage-50 text-sm space-y-2"><p class="font-semibold text-ink">🕰️ Jam Layanan</p><p>Senin–Sabtu, 08.00–20.00 WIB</p><p class="font-semibold text-ink pt-2">📍 Wilayah Cakupan</p><p>Konsultasi online untuk seluruh Indonesia via WhatsApp.</p></div></div>
+<form onsubmit="send(event)" class="card p-7 sm:p-9 lg:col-span-3 space-y-4 rv">
+<h3 class="text-xl font-semibold">Formulir Pertanyaan / Konsultasi</h3>
+<div class="grid sm:grid-cols-2 gap-4"><div><label class="block text-xs font-semibold mb-1.5" for="f-nama">Nama Bunda</label><input id="f-nama" required class="fi" placeholder="Contoh: Bunda Sari"></div>
+<div><label class="block text-xs font-semibold mb-1.5" for="f-pkt">Paket diminati</label><select id="f-pkt" class="fi"></select></div></div>
+<div><span class="block text-xs font-semibold mb-1.5">Kondisi saat ini</span><div id="f-kond" class="flex flex-wrap gap-2"></div></div>
+<div><label class="block text-xs font-semibold mb-1.5" for="f-msg">Pertanyaan / kebutuhan Bunda</label><textarea id="f-msg" rows="4" required class="fi" placeholder="Ceritakan singkat, misalnya: bayi sulit menempel…"></textarea></div>
+<label class="flex items-start gap-2.5 text-xs cursor-pointer"><input type="checkbox" required class="mt-0.5 accent-[#7F9B6F]"><span>Saya setuju data yang saya kirim digunakan untuk keperluan konsultasi sesuai <button type="button" onclick="priv()" class="underline text-blush-600 font-semibold">Kebijakan Privasi</button>.</span></label>
+<button class="btn w-full bg-blush-500 hover:bg-blush-600 text-white shadow-lg shadow-blush-500/20">Kirim via WhatsApp ♡</button>
+</form></div></div></section>
+
+<footer class="bg-blush-50 border-t border-blush-100 py-14 text-center"><div class="max-w-3xl mx-auto px-5">
+<p class="ser text-2xl text-blush-600 mb-2">Momsbloom <span class="text-sage-500">♡</span></p>
+<p class="ser italic text-sage-600 mb-6">You are not alone in your breastfeeding journey.</p>
+<button onclick="priv()" class="text-xs underline text-blush-600 font-semibold mb-5">Kebijakan Privasi</button>
+<p class="text-[11px] leading-relaxed text-ink/60 max-w-xl mx-auto mb-4">Layanan Momsbloom bersifat edukasi dan pendampingan pendukung, bukan pengganti pemeriksaan, diagnosis, atau tindakan tenaga kesehatan. Segera ke fasilitas kesehatan bila ada tanda bahaya.</p>
+<p class="text-[11px] text-ink/50 mb-2">Foto oleh <a class="underline" href="https://unsplash.com/@luizabraun" target="_blank" rel="noopener">Luiza Braun</a>, Wren Meinberg, Leighann Blackwood, Pablo Merchán Montes, dan kontributor lain di <a class="underline" href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
+<p class="text-xs text-ink/50">© 2026 Momsbloom. Dibuat dengan ♡ untuk ibu Indonesia.</p></div></footer>
+
+<a id="fwa" target="_blank" rel="noopener" aria-label="Chat WhatsApp" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-sage-500 hover:bg-sage-600 text-white shadow-xl flex items-center justify-center hover:scale-110 transition"><span class="absolute inset-0 rounded-full bg-sage-400 animate-ping opacity-30"></span><span class="relative text-2xl">💬</span></a>
+
+<div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-ink/30 backdrop-blur-sm p-4"><div class="card pop max-w-lg w-full p-8 max-h-[88vh] overflow-y-auto relative">
+<button onclick="closeM()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-blush-50 hover:bg-blush-100" aria-label="Tutup">✕</button>
+<h3 class="text-2xl font-semibold mb-4">Kebijakan Privasi</h3>
+<div class="space-y-3 text-sm leading-relaxed">
+<p>Informasi kesehatan ibu dan bayi bersifat pribadi. Momsbloom menjaganya dengan serius.</p>
+<p><b>Data yang kami minta:</b> nama, kondisi menyusui, dan pertanyaan atau keluhan yang Bunda tulis, hanya seperlunya untuk konsultasi.</p>
+<p><b>Penggunaan:</b> data dipakai untuk memberi edukasi dan pendampingan, serta tindak lanjut sesuai paket.</p>
+<p><b>Pembagian:</b> data tidak dijual dan tidak dibagikan kepada pihak lain tanpa persetujuan Bunda, kecuali untuk merujuk Bunda ke tenaga kesehatan atas persetujuan Bunda.</p>
+<p><b>Bloom Tracker:</b> catatan menyusui disimpan hanya di perangkat Bunda (localStorage) dan tidak dikirim ke server mana pun.</p>
+<p><b>Hak Bunda:</b> Bunda dapat meminta data konsultasi dihapus kapan saja dengan menghubungi kami melalui WhatsApp atau email.</p></div></div></div>
+<div id="toast" class="fixed bottom-24 left-1/2 -translate-x-1/2 z-[70] px-5 py-2.5 rounded-full bg-sage-700 text-white text-xs font-semibold shadow-xl opacity-0 pointer-events-none transition-opacity"></div>
+
+<script>
+// ====== EDIT DI SINI ======
+const WA='6281234567890'; // ganti dengan nomor WhatsApp Momsbloom (format 62…)
+// ==========================
+const $=i=>document.getElementById(i),WAL=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+const open_=t=>window.open(WAL(t),'_blank','noopener,noreferrer');
+const toast=m=>{const t=$('toast');t.textContent=m;t.style.opacity=1;clearTimeout(toast.h);toast.h=setTimeout(()=>t.style.opacity=0,2200)};
+const load=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}},store=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const NAV=[['tentang','Tentang'],['paket','Paket'],['app','Bloom Tools'],['edukasi','Edukasi'],['alur','Alur'],['kontak','Kontak']];
+$('nav').innerHTML=NAV.map(([i,l])=>`<a href="#${i}" class="hover:text-blush-500 transition">${l}</a>`).join('');
+$('mm').innerHTML=NAV.map(([i,l])=>`<a onclick="mm()" href="#${i}" class="block px-3 py-2.5 rounded-2xl hover:bg-blush-50">${l}</a>`).join('');
+const mm=()=>$('mm').classList.toggle('hidden');
+$('c-wa').href=WAL('Halo Momsbloom, saya ingin berkonsultasi tentang menyusui.');$('fwa').href=WAL('Halo Momsbloom, saya butuh bantuan seputar menyusui.');
+
+// Tentang
+$('sasaran').innerHTML=['Ibu hamil trimester 3','Ibu primipara','Ibu menyusui masa awal','Suami & keluarga'].map(t=>`<span class="px-4 py-2 rounded-full bg-sage-50 border border-sage-200 text-sm text-sage-700">${t}</span>`).join('');
+$('misi').innerHTML=['Memberi edukasi menyusui yang mudah dipahami dan bersumber terpercaya.','Mendampingi ibu sesuai kondisi dan kebutuhannya.','Menyediakan tindak lanjut yang berkelanjutan, bukan hanya sekali konsultasi.','Melibatkan keluarga, terutama suami, sebagai sistem pendukung.','Mengarahkan ke tenaga kesehatan bila diperlukan.'].map((t,i)=>`<li class="flex gap-3"><span class="w-6 h-6 rounded-full bg-sage-100 text-sage-700 text-xs font-bold flex items-center justify-center shrink-0">${i+1}</span><span>${t}</span></li>`).join('');
+$('nilai').innerHTML=[['🤍','Empati','Mendengar tanpa menghakimi, memahami setiap cerita ibu.'],['📖','Edukatif','Informasi yang jelas, akurat, dan mudah dipraktikkan.'],['🌷','Personal','Pendekatan disesuaikan kondisi ibu dan bayi.'],['🌱','Berkelanjutan','Ditemani dari awal hingga ibu merasa mantap.']].map(([e,t,d],i)=>`<div class="card p-6 text-center hover:-translate-y-1.5 transition rv" style="transition-delay:${i*80}ms"><div class="w-14 h-14 mx-auto rounded-full bg-blush-50 flex items-center justify-center text-2xl mb-4">${e}</div><h3 class="text-lg font-semibold mb-1">${t}</h3><p class="text-sm text-ink/70">${d}</p></div>`).join('');
+
+// Paket
+const PK=[
+{n:'Basic Support',d:'Untuk Bunda yang butuh arahan awal.',f:['1 kali konsultasi awal','Identifikasi kebutuhan ibu','Edukasi personal','Materi edukasi digital','Edukasi singkat untuk keluarga'],c:'sage'},
+{n:'Continuous Support',d:'Ditemani berkala dengan tindak lanjut.',f:['Konsultasi awal','Edukasi personal','2–3 kali follow up','Konsultasi digital'],c:'blush',star:1},
+{n:'Intensive Support',d:'Pendampingan paling dekat dan menyeluruh.',f:['Konsultasi awal','Pendampingan berkala','Follow up lebih intensif','Edukasi lengkap untuk keluarga','Evaluasi dan rujukan jika diperlukan'],c:'sage'}];
+$('pk').innerHTML=PK.map((p,i)=>`<div class="card p-8 flex flex-col relative hover:-translate-y-2 transition rv ${p.star?'!border-blush-400 ring-4 ring-blush-100':''}" style="transition-delay:${i*100}ms">${p.star?'<span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blush-500 text-white text-[11px] font-bold px-4 py-1 rounded-full">Paling Seimbang</span>':''}
+<div class="w-12 h-12 rounded-2xl bg-${p.c}-100 flex items-center justify-center mb-5 text-xl">${['🌿','🌸','🌷'][i]}</div>
+<h3 class="text-2xl font-semibold mb-1">${p.n}</h3><p class="text-sm text-ink/70 mb-5">${p.d}</p>
+<p class="ser text-lg text-blush-600 mb-5">Harga segera hadir</p>
+<ul class="space-y-3 text-sm mb-8 flex-1">${p.f.map(x=>`<li class="flex gap-2.5"><span class="text-sage-500">✓</span><span>${x}</span></li>`).join('')}</ul>
+<button onclick="pickPkg('${p.n}')" class="btn ${p.star?'bg-blush-500 hover:bg-blush-600 text-white':'bg-cream-50 border border-sage-200 text-sage-700 hover:bg-sage-50'}">Pilih Paket Ini</button></div>`).join('');
+function pickPkg(n){$('f-pkt').value=n;location.hash='kontak';toast(n+' dipilih ♡')}
+$('f-pkt').innerHTML='<option>Belum tahu, ingin konsultasi dulu</option>'+PK.map(p=>`<option>${p.n}</option>`).join('');
+
+// App
+let tab='tr';
+const TB=[['tr','🍼 Bloom Tracker'],['qz','🌸 Cari Paketmu']];
+function rTabs(){$('tabs').innerHTML=TB.map(([k,l])=>`<button onclick="tab='${k}';rTabs();rApp()" class="px-5 py-2.5 rounded-full text-sm font-semibold transition ${tab===k?'bg-sage-500 text-white shadow-md':'bg-white text-sage-700 border border-sage-200 hover:bg-sage-50'}">${l}</button>`).join('')}
+const rApp=()=>{tab==='tr'?rTr():rQz()};
+
+// -- Tracker
+let TR=load('mb_feed',[]),side='Kiri',t0=null,iv=null;
+const fmt=s=>`${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
+const dk=t=>new Date(t).toDateString();
+function ago(t){const m=Math.floor((Date.now()-t)/6e4);return m<1?'baru saja':m<60?m+' menit lalu':Math.floor(m/60)+' jam '+(m%60)+' menit lalu'}
+function rTr(){
+const td=TR.filter(x=>dk(x.t)===dk(Date.now())),tot=td.reduce((a,x)=>a+x.s,0),C=2*Math.PI*52,off=C*(1-Math.min(td.length/8,1));
+const last=[...TR].sort((a,b)=>b.t-a.t);
+$('app-body').innerHTML=`<div class="grid md:grid-cols-2 gap-10 items-center pop">
+<div class="text-center"><div class="relative w-44 h-44 mx-auto mb-5"><svg viewBox="0 0 120 120" class="w-full -rotate-90"><circle cx="60" cy="60" r="52" fill="none" stroke="#F7E1E0" stroke-width="9"/><circle cx="60" cy="60" r="52" fill="none" stroke="#7F9B6F" stroke-width="9" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${off}" style="transition:stroke-dashoffset .8s"/></svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center"><span id="tm" class="ser text-3xl font-semibold text-blush-600">${t0?fmt(Math.round((Date.now()-t0)/1000)):'00:00'}</span><span class="text-[11px] text-ink/60">${td.length} sesi hari ini</span></div></div>
+<div class="inline-flex bg-blush-50 rounded-full p-1 mb-5">${['Kiri','Kanan'].map(s=>`<button ${t0?'disabled':''} onclick="side='${s}';rTr()" class="px-5 py-2 rounded-full text-sm font-semibold transition ${side===s?'bg-white shadow text-blush-600':'text-ink/60'}">Sisi ${s}</button>`).join('')}</div><br>
+<button onclick="togT()" class="btn ${t0?'bg-blush-500 hover:bg-blush-600':'bg-sage-500 hover:bg-sage-600'} text-white shadow-lg">${t0?'■ Selesai Menyusui':'▶ Mulai Menyusui'}</button></div>
+<div><div class="grid grid-cols-2 gap-3 mb-5"><div class="rounded-3xl bg-sage-50 p-4"><p class="text-[11px] text-ink/60">Total hari ini</p><p class="ser text-2xl text-sage-700">${fmt(tot)}</p></div><div class="rounded-3xl bg-blush-50 p-4"><p class="text-[11px] text-ink/60">Terakhir menyusui</p><p class="text-sm font-semibold text-blush-600 mt-1">${last[0]?ago(last[0].t):'Belum ada'}</p></div></div>
+<p class="text-xs font-bold uppercase tracking-wider text-sage-600 mb-2">Riwayat terbaru</p>
+<ul class="space-y-2 mb-3">${last.slice(0,5).map(x=>`<li class="flex justify-between items-center rounded-2xl bg-cream-50 border border-blush-100 px-4 py-2.5 text-sm"><span>${x.side==='Kiri'?'⬅️':'➡️'} ${x.side} · <b>${fmt(x.s)}</b></span><span class="text-xs text-ink/50">${new Date(x.t).toLocaleString('id-ID',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})} <button onclick="delT(${x.id})" class="text-blush-500 ml-1" aria-label="Hapus">✕</button></span></li>`).join('')||'<li class="text-sm text-ink/50">Belum ada catatan. Tekan “Mulai Menyusui” saat Bunda mulai.</li>'}</ul>
+<p class="text-[11px] text-ink/50 leading-relaxed">Bayi baru lahir umumnya menyusu 8–12 kali per 24 jam. Setiap bayi berbeda; bila ragu soal kecukupan ASI, konsultasikan dengan tenaga kesehatan.</p></div></div>`}
+function togT(){
+if(!t0){t0=Date.now();iv=setInterval(()=>{const e=$('tm');if(e)e.textContent=fmt(Math.round((Date.now()-t0)/1000))},500);rTr();return}
+const s=Math.round((Date.now()-t0)/1000);clearInterval(iv);t0=null;
+if(s<1){rTr();return}TR.push({id:Date.now(),t:Date.now(),side,s});store('mb_feed',TR);side=side==='Kiri'?'Kanan':'Kiri';rTr();toast('Sesi tercatat ♡ Sisi berikutnya: '+side)}
+function delT(id){TR=TR.filter(x=>x.id!==id);store('mb_feed',TR);rTr()}
+
+// -- Quiz
+const Q=[['Sedang di tahap mana, Bunda?',[['Menjelang melahirkan / sedang hamil',0],['Baru melahirkan (0–6 minggu)',1],['Sudah beberapa bulan menyusui',1]]],
+['Dukungan seperti apa yang Bunda cari?',[['Cukup sekali konsultasi untuk arahan',0],['Ditemani berkala dengan follow up',1],['Pendampingan dekat dan keluarga ikut belajar',2]]],
+['Apa yang paling Bunda rasakan sekarang?',[['Siap, hanya ingin belajar lebih dulu',0],['Bingung dan kurang percaya diri',1],['Ada kendala (nyeri, ASI terasa sedikit, bayi sulit menyusu)',2]]]];
+let qi=0,qa=[];
+function rQz(){
+if(qi>=Q.length){const sc=qa.reduce((a,b)=>a+b,0),p=sc<=1?0:sc<=4?1:2,pk=PK[p];
+$('app-body').innerHTML=`<div class="text-center pop max-w-md mx-auto"><div class="text-5xl mb-3 beat">${['🌿','🌸','🌷'][p]}</div><p class="text-xs font-bold uppercase tracking-wider text-sage-600">Paket yang cocok untuk Bunda</p><h3 class="text-3xl font-semibold my-2">${pk.n}</h3><p class="mb-5">${pk.d}</p>
+<ul class="text-sm space-y-1.5 mb-6 text-left inline-block">${pk.f.map(x=>`<li>✓ ${x}</li>`).join('')}</ul>
+${qa[2]===2?'<p class="text-xs bg-blush-50 border border-blush-100 rounded-2xl p-3 mb-5">Bila Bunda mengalami nyeri hebat, demam, atau payudara bengkak merah, segera periksa ke tenaga kesehatan.</p>':''}
+<div class="flex flex-col sm:flex-row gap-3 justify-center"><button onclick="pickPkg('${pk.n}')" class="btn bg-blush-500 hover:bg-blush-600 text-white">Lanjut Konsultasi ♡</button><button onclick="qi=0;qa=[];rQz()" class="btn bg-white border border-sage-200 text-sage-700">Ulangi</button></div></div>`;return}
+const [q,o]=Q[qi];
+$('app-body').innerHTML=`<div class="max-w-lg mx-auto pop"><div class="flex justify-center gap-2 mb-6">${Q.map((_,i)=>`<span class="h-1.5 w-10 rounded-full ${i<=qi?'bg-sage-500':'bg-sage-100'}"></span>`).join('')}</div>
+<p class="text-xs text-center text-ink/50 mb-2">Pertanyaan ${qi+1} dari ${Q.length}</p><h3 class="text-2xl font-semibold text-center mb-7">${q}</h3>
+<div class="space-y-3">${o.map(([t,v])=>`<button onclick="qa.push(${v});qi++;rQz()" class="w-full text-left px-5 py-4 rounded-2xl border border-blush-200 bg-white hover:border-sage-500 hover:bg-sage-50 hover:translate-x-1 transition text-sm font-medium">${t}</button>`).join('')}</div>
+${qi?'<button onclick="qi--;qa.pop();rQz()" class="mt-5 text-xs text-ink/50 underline mx-auto block">← Kembali</button>':''}</div>`}
+
+// Edukasi
+const AR=[['Persiapan menyusui sebelum melahirkan','Apa saja yang perlu disiapkan ibu agar proses menyusui berjalan lebih tenang sejak hari pertama.','Kemenkes (Keslan)','https://keslan.kemkes.go.id/view_artikel/663/apa-saja-sih-yang-perlu-disiapkan-ibu-untuk-meng-asi-hi-si-kecil','🤰','blush','image.png'],
+['Tantangan menyusui pada ibu primipara','Mengenali tantangan yang sering dihadapi ibu baru dan solusi yang bisa dicoba.','Columbia Asia','https://columbiaasia.co.id/artikel/kesehatan/mengatasi-tantangan-menyusui-solusi-untuk-ibu-baru-menyusui/','🍼','sage','NFH6LovuJso'],
+['Peran suami dalam mendukung ibu menyusui','Dukungan pasangan membuat ibu lebih percaya diri dan nyaman menyusui.','RS JIH','https://rs-jih.co.id/rsjih/article-detail/peran-suami-saat-istri-menyusui','👨‍👩‍👧','blush','image copy.png']];
+$('art').innerHTML=AR.map(([t,d,s,u,e,c,p],i)=>`<a href="${u}" target="_blank" rel="noopener noreferrer" class="card overflow-hidden group hover:-translate-y-2 transition rv block" style="transition-delay:${i*100}ms"><div class="relative h-48 bg-${c}-100 flex items-center justify-center text-6xl overflow-hidden"><span>${e}</span><img loading="lazy" src="${p.endsWith('.png')?p:'https://unsplash.com/photos/'+p+'/download?w=800'}" alt="${t}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" onerror="this.remove()"><span class="absolute bottom-3 left-3 bg-white/90 text-[10px] font-bold uppercase tracking-wider text-${c}-600 px-3 py-1 rounded-full">${s}</span></div><div class="p-6"><span class="text-[11px] font-bold uppercase tracking-wider text-${c}-600">${s}</span><h3 class="text-xl font-semibold my-2 leading-snug">${t}</h3><p class="text-sm text-ink/70 mb-4">${d}</p><span class="text-sm font-semibold text-blush-600">Baca artikel →</span></div></a>`).join('');
+$('faq').innerHTML=[['Sampai kapan ASI eksklusif diberikan?','Rekomendasi umum dari WHO dan Kemenkes adalah ASI eksklusif selama 6 bulan pertama, lalu dilanjutkan bersama MPASI.'],['Apakah menyusui harus terasa sakit?','Rasa tidak nyaman ringan di awal bisa terjadi, tetapi nyeri yang terus-menerus atau luka sering berkaitan dengan pelekatan. Sebaiknya segera dikonsultasikan.'],['Bagaimana tahu bayi cukup ASI?','Beberapa tandanya: bayi tampak puas setelah menyusu, popok basah dan BAB teratur, serta berat badan naik sesuai pemantauan. Bila ragu, konsultasikan.'],['Apakah layanan ini menggantikan dokter atau bidan?','Tidak. Momsbloom adalah pendamping edukasi. Bila ada tanda bahaya atau perlu pemeriksaan, Bunda akan diarahkan ke tenaga kesehatan.'],['Apakah suami boleh ikut konsultasi?','Tentu. Keterlibatan suami dan keluarga sangat kami dorong dan termasuk dalam edukasi untuk keluarga.']].map(([q,a])=>`<details class="card !rounded-3xl group"><summary class="flex justify-between items-center gap-4 px-6 py-5 font-semibold text-ink">${q}<span class="text-blush-500 text-2xl leading-none transition group-open:rotate-45">+</span></summary><p class="px-6 pb-6 text-sm leading-relaxed">${a}</p></details>`).join('');
+
+// Alur
+$('steps').innerHTML=[['Hubungi Kami','Ibu menghubungi layanan melalui WhatsApp.','💬'],['Konsultasi Awal','Mengidentifikasi kebutuhan dan kondisi ibu.','🌷'],['Edukasi & Pendampingan','Memberikan edukasi sesuai kebutuhan.','📖'],['Follow-up','Melakukan tindak lanjut sesuai paket.','🌱'],['Evaluasi / Rujukan','Jika dibutuhkan, ibu diarahkan ke tenaga kesehatan yang sesuai.','🩺']].map(([t,d,e],i)=>`<div class="text-center rv" style="transition-delay:${i*110}ms"><div class="relative w-16 h-16 mx-auto rounded-full bg-white border-2 ${i%2?'border-sage-200':'border-blush-200'} flex items-center justify-center text-2xl mb-5 hover:scale-110 transition shadow-md">${e}<span class="absolute -top-1.5 -right-1.5 w-6 h-6 rounded-full ${i%2?'bg-sage-500':'bg-blush-500'} text-white text-[11px] font-bold flex items-center justify-center">${i+1}</span></div><h3 class="text-lg font-semibold mb-1.5">${t}</h3><p class="text-sm text-ink/70">${d}</p></div>`).join('');
+
+// Kontak
+let kond='Sedang hamil';
+const KD=['Sedang hamil','Baru melahirkan','Sedang menyusui','Mewakili keluarga'];
+function rK(){$('f-kond').innerHTML=KD.map(k=>`<button type="button" onclick="kond='${k}';rK()" class="px-4 py-2 rounded-full text-xs font-semibold border transition ${kond===k?'bg-sage-500 text-white border-sage-500':'bg-white border-blush-200 hover:border-sage-500'}">${k}</button>`).join('')}
+function send(e){e.preventDefault();open_(`Halo Momsbloom, saya ingin konsultasi:\n\n• Nama: ${$('f-nama').value.trim()}\n• Kondisi: ${kond}\n• Paket diminati: ${$('f-pkt').value}\n• Pertanyaan: ${$('f-msg').value.trim()}\n\nSaya sudah membaca Kebijakan Privasi. Terima kasih.`);toast('Membuka WhatsApp… ♡')}
+const priv=()=>{$('modal').classList.replace('hidden','flex');document.body.style.overflow='hidden'};
+const closeM=()=>{$('modal').classList.replace('flex','hidden');document.body.style.overflow=''};
+$('modal').onclick=e=>{if(e.target.id==='modal')closeM()};addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+
+// scroll
+addEventListener('scroll',()=>{const h=document.documentElement;$('prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+rTabs();rApp();rK();setInterval(()=>{if(tab==='tr'&&!t0)rTr()},60000);
+const io='IntersectionObserver'in window?new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1}):null;
+document.querySelectorAll('.rv').forEach(el=>io?io.observe(el):el.classList.add('in'));
+</script>
+</body>
+</html>
